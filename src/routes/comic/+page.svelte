@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import moment from 'moment';
-
+	import { base } from '$app/paths';
 	interface Comic {
 		month: number;
 		num: number;
@@ -68,7 +68,7 @@
 </div>
 
 <div class="home_button">
-	<a href="/#home">Home</a>
+	<a href={base}>Home</a>
 </div>
 
 <style>

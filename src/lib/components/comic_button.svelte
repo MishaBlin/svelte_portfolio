@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <div class="button_comic">
-	<a href="comic">View Comic</a>
+	<a href="{base}/comic">View Comic</a>
 </div>
 
 <style>
