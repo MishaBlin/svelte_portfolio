@@ -9,7 +9,7 @@ const config = {
 		adapter: adapter()
 	},
 	paths: {
-		base: process.env.NODE_ENV === 'production' ? '/svelte_portfolio' : ''
+		base: process.env.NODE_ENV === 'production' ? '/svelte_portfloio' : ''
 	}
 };
 
