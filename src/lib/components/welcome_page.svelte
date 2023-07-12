@@ -1,6 +1,6 @@
 <div class="main-page" id="home">
 	<div class="wrapper-main">
-		<div class="photo-block"><img src="" alt="personal_photo" id="photo" /></div>
+		<div class="photo-block"><img src="img/photo_me.jpg" alt="personal_photo" id="photo" /></div>
 		<div class="text-block">
 			<h1>Welcome! I am <span>M</span>ikhail<span>.</span></h1>
 			<p>
