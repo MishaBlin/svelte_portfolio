@@ -7,8 +7,8 @@
 			<div class="menu">
 				<ul>
 					<li><div class="box"><a href="/#home">About me</a></div></li>
-					<li><div class="box"><a href="/#projects">Projects</a></div></li>
-					<li><div class="box"><a href="/#contacts">Contacts</a></div></li>
+					<li><div class="box"><a href="/#">Projects</a></div></li>
+					<li><div class="box"><a href="/#">Contacts</a></div></li>
 				</ul>
 				<div class="hamburger">
 					<span class="bar" />
