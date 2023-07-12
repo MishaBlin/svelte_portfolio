@@ -68,7 +68,7 @@
 </div>
 
 <div class="home_button">
-	<a href={base}>Home</a>
+	<a href="{base}/">Home</a>
 </div>
 
 <style>
