@@ -14,11 +14,6 @@
 					<li><div class="box"><a href="{base}/#projects">Projects</a></div></li>
 					<li><div class="box"><a href="{base}/#contacts">Contacts</a></div></li>
 				</ul>
-				<div class="hamburger">
-					<span class="bar" />
-					<span class="bar" />
-					<span class="bar" />
-				</div>
 			</div>
 		</div>
 	</div>
@@ -101,19 +96,5 @@
 
 	.box:hover::before {
 		width: 100%;
-	}
-
-	.hamburger {
-		display: none;
-		cursor: pointer;
-	}
-
-	.bar {
-		display: block;
-		width: 25px;
-		height: 3px;
-		margin: 5px;
-		transform: 0.3 ease-in-out;
-		background-color: white;
 	}
 </style>
