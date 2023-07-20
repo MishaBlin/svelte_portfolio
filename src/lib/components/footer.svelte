@@ -1,3 +1,9 @@
+<svelte:head>
+	<meta name="description" content="contacts" />
+	<meta name="keywords" content="telegram, github, email" />
+	<meta name="author" content="Mikhail Kalinin" />
+</svelte:head>
+
 <div class="contacts" id="contacts">
 	<h1>My Contacts</h1>
 	<div class="contacts-wrapper">

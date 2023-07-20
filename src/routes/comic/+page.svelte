@@ -2,41 +2,7 @@
 	import { onMount } from 'svelte';
 	import moment from 'moment';
 	import { base } from '$app/paths';
-	interface Comic {
-		month: number;
-		num: number;
-		link: string;
-		year: number;
-		news: string;
-		safe_title: string;
-		transcript: string;
-		alt: string;
-		img: string;
-		title: string;
-		day: number;
-	}
-
-	async function fetchID(email: string): Promise<string> {
-		const params: URLSearchParams = new URLSearchParams();
-		if (email) {
-			params.append('email', email);
-		}
-		const response: Response = await fetch(
-			'https://fwd.innopolis.university/api/hw2?' + params.toString()
-		);
-		return await response.json();
-	}
-
-	async function fetchImage(id: string): Promise<Comic> {
-		const params = new URLSearchParams();
-		if (id) {
-			params.append('id', id);
-		}
-		const response: Response = await fetch(
-			'https://fwd.innopolis.university/api/comic?' + params.toString()
-		);
-		return await response.json();
-	}
+	export let data;
 
 	let image_src = '#';
 	let image_alt = 'Requested_comic';
@@ -46,19 +12,25 @@
 	$: image_src, image_alt, title, date_element, time_ago_element;
 	onMount(async () => {
 		if (typeof document !== 'undefined') {
-			const id = await fetchID('mi.kalinin@innopolis.university');
-			const data = await fetchImage(id);
-			const date = new Date(Date.UTC(data.year, data.month, data.day));
-			console.log(data);
-			image_src = data.img;
-			image_alt = data.alt;
-			title = data.safe_title;
+			let { dataImage } = data;
+
+			const date = new Date(Date.UTC(dataImage.year, dataImage.month, dataImage.day));
+			image_src = dataImage.img;
+			image_alt = dataImage.alt;
+			title = dataImage.safe_title;
 			date_element = 'Date: ' + date.toLocaleDateString();
 			time_ago_element =
-				'The comic was released ' + moment(`${data.year}-${data.month}-${data.day}`).fromNow();
+				'The comic was released ' +
+				moment(`${dataImage.year}-${dataImage.month}-${dataImage.day}`).fromNow();
 		}
 	});
 </script>
+
+<svelte:head>
+	<meta name="description" content="comic" />
+	<meta name="keywords" content="comic, api" />
+	<meta name="author" content="Mikhail Kalinin" />
+</svelte:head>
 
 <div class="request-wrapper">
 	<h1 id="request-title">{title}</h1>

@@ -2,6 +2,12 @@
 	import { base } from '$app/paths';
 </script>
 
+<svelte:head>
+	<meta name="description" content="links" />
+	<meta name="keywords" content="projects, home, contacts" />
+	<meta name="author" content="Mikhail Kalinin" />
+</svelte:head>
+
 <header>
 	<div class="navbar-container">
 		<div class="header-wrap">

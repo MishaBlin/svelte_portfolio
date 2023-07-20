@@ -1,3 +1,9 @@
+<svelte:head>
+	<meta name="description" content="welcome page" />
+	<meta name="keywords" content="Innopolis, Software" />
+	<meta name="author" content="Mikhail Kalinin" />
+</svelte:head>
+
 <div class="main-page" id="home">
 	<div class="wrapper-main">
 		<div class="photo-block"><img src="img/photo_me.jpg" alt="personal_photo" id="photo" /></div>

@@ -1,3 +1,9 @@
+<svelte:head>
+	<meta name="description" content="projects" />
+	<meta name="keywords" content="projects, games, software, application" />
+	<meta name="author" content="Mikhail Kalinin" />
+</svelte:head>
+
 <div class="projects" id="projects">
 	<div class="projects-wrapper">
 		<h1>My Projects</h1>
