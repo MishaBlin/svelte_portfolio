@@ -1,7 +1,7 @@
 <script>
-	import ComicButton from '$lib/components/ComicButton.svelte';
-	import Projects from '$lib/components/Projects.svelte';
-	import WelcomePage from '$lib/components/WelcomePage.svelte';
+	import ComicButton from '$lib/components/comicButton.svelte';
+	import Projects from '$lib/components/projects.svelte';
+	import WelcomePage from '$lib/components/welcomePage.svelte';
 </script>
 
 <svelte:head>
